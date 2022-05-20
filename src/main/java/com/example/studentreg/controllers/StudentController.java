@@ -18,7 +18,7 @@ public class StudentController {
     private StudentService studentService;
 
     @PostMapping("/student.add") //checked
-    public ResponseEntity<Student> addStudent(@RequestBody Student newStudent) {gi
+    public ResponseEntity<Student> addStudent(@RequestBody Student newStudent) {
         return ResponseEntity.ok(studentService.addStudent(newStudent));
     }
 
